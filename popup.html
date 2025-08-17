@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodeBuddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="popup.js"></script>
+  <div class="navbar">
+    <div id="tab-code" class="active">Code</div>
+   <a id="tab-notes" href="notes.html" style="color: white; text-decoration: none;">Notes</a>
+  </div>
+
+  <div class="container">
+    <!-- Code Section -->
+    <div id="code-section" class="section active">
+      <div class="section-title">Code Analyzer</div>
+      <textarea id="inp" placeholder="Paste your code here..."></textarea>
+      <div>
+        <button id="time-complexity">Time Complexity</button>
+        <button id="optimize">Optimize</button>
+        <button id="mistakes">Mistake Check</button>
+        <!-- <button id="pattern-match">Pattern Detect</button> -->
+      </div>
+    </div>
+
+    <!-- Notes Section -->
+    <div id="notes-section" class="section">
+      <div class="section-title">Notes</div>
+      <textarea id="notes" placeholder="Save tips or code snippets..."></textarea>
+      <button id="save-notes">Save</button>
+    </div>
+  </div>
+</body>
+</html>

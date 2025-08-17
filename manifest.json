@@ -1,0 +1,31 @@
+{
+    "manifest_version":3,
+    "name": "CodeBuddy",
+    "version":"1.0.0",
+    "description": "Helps with competetive programming practice" ,
+    "permissions":["scripting", "activeTab","storage", "tabs"],
+    "action":{
+        "default_popup":"popup.html"
+    },
+    "content_scripts":[
+        {
+             "resources": ["notes.html"],
+            "matches":["<all_urls>"],
+            "js":["content.js"]
+        }
+    ],
+    
+    "background": {
+        "service_worker": "background.js"
+    },
+    
+    "commands": {
+     "open-analyzer-tab": {
+        "suggested_key": {
+        "default": "Ctrl+Shift+X"
+        },
+        "description": "Analyze selected code on the current page"
+    }
+    }
+
+}
