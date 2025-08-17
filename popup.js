@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyAPecOrQ0vNzkP8IWoQJDuDTYqmvDYEIF0";  // Replace this securely later
+const API_KEY = "";  // Replace this securely later
 const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
 document.addEventListener("DOMContentLoaded", () => {
